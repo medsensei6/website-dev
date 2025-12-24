@@ -1,15 +1,16 @@
+import { Link } from "react-router-dom";
+
 export default function Navbar() {
   return (
-    <header className="navbar">
-      <div className="nav-container">
-        <div className="logo">MedSensei</div>
-        <nav>
-          <a href="#signup">Sign Up</a>
-          <a href="#team">The Team</a>
-          <a href="#faq">FAQ</a>
-          <a href="#contact">Contact Us</a>
-        </nav>
+    <nav className="navbar">
+      <Link to="/" className="logo-link">
+        <h1>MedSensei</h1>
+      </Link>
+      <div className="nav-links">
+        <Link to="/signup">Sign Up</Link>
+        <Link to="/team">Team</Link>
+        <Link to="/faq">FAQ</Link>
       </div>
-    </header>
+    </nav>
   );
 }

@@ -1,24 +1,24 @@
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
-import Hero from "./sections/Hero";
-import Donate from "./sections/Donate";
-import Signup from "./sections/Signup";
-import Team from "./sections/Team";
-import FAQ from "./sections/FAQ";
-import Contact from "./sections/Contact";
+import Home from "./pages/Home";
+import SignUp from "./pages/SignUp";
+import Team from "./pages/Team";
+import FAQ from "./pages/FAQ";
 
 export default function App() {
   return (
-    <>
+    <HashRouter>
       <Navbar />
-      <Hero />
-      <Donate />
-      <Signup />
-      <Team />
-      <FAQ />
-      <Contact />
+      <div style={{ minHeight: "80vh" }}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/faq" element={<FAQ />} />
+        </Routes>
+      </div>
       <Footer />
-    </>
+    </HashRouter>
   );
 }

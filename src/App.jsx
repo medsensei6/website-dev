@@ -4,6 +4,8 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import SignUp from "./pages/SignUp";
 import Team from "./pages/Team";
+import Resources from "./pages/Resources";
+import Article from "./pages/Article";
 import FAQ from "./pages/FAQ";
 
 export default function App() {
@@ -15,6 +17,8 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/team" element={<Team />} />
+          <Route path="/resources" element={<Resources />} />
+          <Route path="/resources/:slug" element={<Article />} />
           <Route path="/faq" element={<FAQ />} />
         </Routes>
       </div>

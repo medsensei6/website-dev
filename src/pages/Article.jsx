@@ -6,15 +6,15 @@ const articleContent = {
     content: [
       {
         heading: "1. Center Your Application Around What You Genuinely Care About",
-        body: "Choose extracurriculars that reflect real interests rather than what you think admissions committees want to see. When your activities are aligned with something you genuinely care about, your motivation, growth, and insight come through naturally in essays and interviews. Authentic interest is easier to sustain—and easier for others to recognize."
+        body: "Choose extracurriculars that reflect real interests rather than what you think admissions committees want to see. When your activities are aligned with something you genuinely care about, your motivation, growth, and insight come through naturally in essays and interviews. Authentic interest is easier to sustain - and easier for others to recognize."
       },
       {
         heading: "2. Be Intentional About the Story Your Application Tells",
-        body: "Every application tells a story, whether intentional or not. Step back and ask what themes emerge across your activities, experiences, and reflections. Strong applications show a coherent narrative—how your experiences connect, how you’ve grown, and why medicine makes sense in the context of your path."
+        body: "Every application tells a story, whether intentional or not. Step back and ask what themes emerge across your activities, experiences, and reflections. Strong applications show a coherent narrative - how your experiences connect, how you’ve grown, and why medicine makes sense in the context of your path."
       },
       {
         heading: "3. Prioritize Depth and Long-Term Commitment Over Volume",
-        body: "Sustained involvement in a small number of meaningful activities is generally more compelling than brief participation in many unrelated ones. Long-term commitments signal reliability, maturity, and the ability to grow within an organization—qualities medical schools value highly."
+        body: "Sustained involvement in a small number of meaningful activities is generally more compelling than brief participation in many unrelated ones. Long-term commitments signal reliability, maturity, and the ability to grow within an organization - qualities medical schools value highly."
       }
     ]
   },
@@ -23,7 +23,7 @@ const articleContent = {
     content: [
       {
         heading: "1. Not Using a Grammar Checker",
-        body: "Even careful writers miss errors in their own work. Typos, awkward phrasing, and small grammatical mistakes can distract from otherwise strong content. Using a grammar checker—and having at least one other person review your essays—helps ensure your ideas are judged on merit rather than presentation issues."
+        body: "Even careful writers miss errors in their own work. Typos, awkward phrasing, and small grammatical mistakes can distract from otherwise strong content. Using a grammar checker - and having at least one other person review your essays - helps ensure your ideas are judged on merit rather than presentation issues."
       },
       {
         heading: "2. Telling Instead of Showing",
@@ -60,7 +60,7 @@ const articleContent = {
       },
       {
         heading: "Month 3: AAMC Alignment & Final Calibration (Weeks 9–12)",
-        body: "Primary Goal: Align your thinking exactly with AAMC test writers.\n\nCore Resources:\n- AAMC Official Materials: Section Banks, Question Packs, Full-Length Exams (1 FL/week)\n- Ongoing: Anki reviews, targeted UWorld or Blueprint review as needed\n\nWeekly Structure:\n- Take one official AAMC full-length exam per week, review in detail over 1–2 days\n- Complete AAMC Section Bank questions, identify persistent content gaps and repeated reasoning errors, light UWorld or notes review only if necessary\n\nFinal Month Mindset:\n- Focus on passage interpretation, experimental design, AAMC logic patterns\n- Protect sleep, consistency, and confidence\n\nFinal Advice from MedSensei:\n- The MCAT rewards process, not perfection\n- Consistency beats intensity\n- If you review your mistakes honestly, you are improving—even on bad days\n- Trust the plan. Trust the work. Then go kill the exam."
+        body: "Primary Goal: Align your thinking exactly with AAMC test writers.\n\nCore Resources:\n- AAMC Official Materials: Section Banks, Question Packs, Full-Length Exams (1 FL/week)\n- Ongoing: Anki reviews, targeted UWorld or Blueprint review as needed\n\nWeekly Structure:\n- Take one official AAMC full-length exam per week, review in detail over 1–2 days\n- Complete AAMC Section Bank questions, identify persistent content gaps and repeated reasoning errors, light UWorld or notes review only if necessary\n\nFinal Month Mindset:\n- Focus on passage interpretation, experimental design, AAMC logic patterns\n- Protect sleep, consistency, and confidence\n\nFinal Advice from MedSensei:\n- The MCAT rewards process, not perfection\n- Consistency beats intensity\n- If you review your mistakes honestly, you are improving - even on bad days\n- Trust the plan. Trust the work. Then go kill the exam."
       }
     ]
   }

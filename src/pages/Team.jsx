@@ -40,6 +40,10 @@ export default function Team() {
   ];
 
   return (
+    <div>
+    <div className="team-header">
+      <h1>Meet the Team</h1>
+    </div>
     <section className="team-container">
       {teamMembers.map(member => (
         <a
@@ -64,5 +68,6 @@ export default function Team() {
         </a>
       ))}
     </section>
+    </div>
   );
 }

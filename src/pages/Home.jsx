@@ -10,11 +10,11 @@ export default function Home() {
           <br />
           <h2>Equitable Application Advising</h2>
           <p className="hero-subtitle">
-            Personalized guidance for aspiring physicians — <strong>completely free</strong>.
+            Personalized guidance for aspiring physicians  -  <strong>completely free</strong>.
             <br/>
             Navigate medical school applications with expert, human support.
           </p>
-          <Link to="/signup" className="cta-button">Sign Up</Link>
+          {/* <Link to="/signup" className="cta-button">Sign Up</Link> */}
         </div>
       </section>
 
@@ -27,9 +27,9 @@ export default function Home() {
           can cost <strong>tens of thousands of dollars</strong>.
         </p>
         <p>
-          MedSensei was built to change that. We provide affordable,
-          personalized application support so that <strong>every applicant </strong>
-          has a fair chance—regardless of socioeconomic status.
+          MedSensei was built to change that. We provide
+          personalized application support so that <strong>every single applicant </strong>
+          has a fair chance, regardless of socioeconomic status.
         </p>
         <p className="emphasis">
           All services are <strong>100% free</strong>.
@@ -85,7 +85,7 @@ export default function Home() {
               their support, I felt much more confident heading into the exam.”
             </p>
             <span className="author">
-              — Rithik, <strong>525 MCAT scorer</strong>
+              -  Rithik, <strong>525 MCAT scorer</strong>
             </span>
           </div>
 
@@ -102,7 +102,7 @@ export default function Home() {
               interviews.”
             </p>
             <span className="author">
-              — Sarah, <strong>M1 at Sidney Kimmel Medical College</strong>
+              -  Sarah, <strong>M1 at Sidney Kimmel Medical College</strong>
             </span>
           </div>
         </div>

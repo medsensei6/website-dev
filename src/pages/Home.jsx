@@ -40,7 +40,7 @@ export default function Home() {
       </section>
 
       {/* SERVICES */}
-      <section className="cards-container">
+      {/* <section className="cards-container">
         <div className="card">
           <h3>Applicants</h3>
           <ul>
@@ -68,7 +68,7 @@ export default function Home() {
             <li>Flexible time commitment</li>
             <li>Optional MCAT advising</li>
           </ul>
-        </div>
+        </div> */}
       </section>
 
       {/* PROCESS FLOW */}

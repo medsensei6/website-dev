@@ -15,7 +15,7 @@ export default function Home() {
             <br/>
             Navigate medical school applications with expert, human support.
             <br/>
-            <span className="free-text">Everything is FREE</span>
+            {/* <span className="free-text">Everything is FREE</span> */}
           </p>
           {/* <Link to="/signup" className="cta-button">Sign Up</Link> */}
         </div>

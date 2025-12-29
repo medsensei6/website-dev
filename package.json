@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist -u 'MedSensei <medsensei6@gmail.com>'"
   },
   "dependencies": {
     "bootstrap": "^5.3.8",

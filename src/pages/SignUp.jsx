@@ -8,8 +8,9 @@ export default function SignUp() {
         <h1>Get Started with MedSensei</h1>
         <p>
           Choose the option that best fits where you are in your medical journey.
-          <br/>
-          All services are <strong>completely free</strong>.
+        </p>
+        <p>
+          <span className="free-text">Everything is free.</span>
         </p>
       </div>
 

@@ -10,9 +10,11 @@ export default function Home() {
           <br />
           <h2>Equitable Application Advising</h2>
           <p className="hero-subtitle">
-            Personalized guidance for aspiring physicians  -  <strong>completely free</strong>.
+            Personalized guidance for aspiring physicians.
             <br/>
             Navigate medical school applications with expert, human support.
+            <br/>
+            <span className="free-text">Everything is free.</span>
           </p>
           {/* <Link to="/signup" className="cta-button">Sign Up</Link> */}
         </div>
@@ -32,7 +34,7 @@ export default function Home() {
           has a fair chance, regardless of socioeconomic status.
         </p>
         <p className="emphasis">
-          All services are <strong>100% free</strong>.
+          <span className="free-text">Everything is free.</span>
         </p>
       </section>
 

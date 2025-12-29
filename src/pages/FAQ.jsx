@@ -4,7 +4,7 @@ export default function FAQ() {
     {
       question: "What makes MedSensei different from other medical school consulting services?",
       answer:
-        "We offer consistent, personalized support with weekly 1:1 check-ins, rapid responses, and more. Additionally, all services are completely free."
+        "We offer consistent, personalized support with weekly 1:1 check-ins, rapid responses, and more. Additionally, everything is free."
     },
     {
       question: "Who will I be working with during the process?",

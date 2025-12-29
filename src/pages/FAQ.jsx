@@ -7,10 +7,6 @@ export default function FAQ() {
         "We offer consistent, personalized support with weekly 1:1 check-ins, rapid responses, and more. Additionally, all services are completely free."
     },
     {
-      question: "Can I customize a package to fit my unique needs?",
-      answer: "Absolutely, we can customize packages on a case-by-case basis."
-    },
-    {
       question: "Who will I be working with during the process?",
       answer: "You’ll be working mostly with a Sensei who specifically fits your needs. Each Sensei is a successful medical school applicant qualified to help others with their applications."
     },

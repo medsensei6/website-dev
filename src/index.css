@@ -144,11 +144,11 @@ a {
    SPECIAL TEXT STYLES
 ===================== */
 .free-text {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 800;
-  /* color: var(--color-primary-blue); */
-  color: white;
-  background-color: var(--color-primary-blue);
+  color: var(--color-primary-blue);
+  /* color: white; */
+  /* background-color: var(--color-primary-blue); */
   display: inline-block;
   padding: 0.5rem 1.5rem;
   border-radius: 2rem;
@@ -186,14 +186,55 @@ a {
 ===================== */
 .hero {
   position: relative;
-  background:
-    linear-gradient(135deg, rgba(29, 78, 216, 0.1), rgba(37, 99, 235, 0.3)),
-    url('/hero.png') center/cover no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-color: black;
   color: white;
   text-align: center;
-  padding: 4rem 2rem 8rem 2rem;
+  padding: 0;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  max-width: none;
+  width: auto;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(29, 78, 216, 0.1), rgba(37, 99, 235, 0.3));
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  padding: 4rem 2rem;
 }
 
 .hero h1 {
@@ -213,12 +254,16 @@ a {
 /* =====================
    MISSION / TEXT SECTIONS
 ===================== */
+.mission-container {
+  background-color: white;
+  /* background-color: var(--color-bg-section); */
+}
+
 .mission {
-  /* max-width: 56.25rem; */
+  max-width: 55rem;
   margin: 0 auto;
   padding: 2rem 2rem;
   text-align: center;
-  background-color: var(--color-bg-section);
 }
 
 .mission h2 {
@@ -563,7 +608,7 @@ footer {
 
 .signup-header {
   text-align: center;
-  padding: 4.5rem 2rem 2rem;
+  padding: 4.5rem 2rem 0rem 2rem;
   max-width: 50rem;
   margin: 0 auto;
 }
@@ -571,7 +616,7 @@ footer {
 .signup-header h1 {
   font-size: 2.8rem;
   font-weight: 800;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
   color: var(--color-text-heading);
 }
 
@@ -729,6 +774,7 @@ footer {
   max-width: 100%;
   margin: 0 auto;
   padding: 5rem 2rem;
+  background-color: var(--color-bg-section);
 }
 
 .process-flow h2 {

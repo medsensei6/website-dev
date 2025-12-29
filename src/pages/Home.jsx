@@ -1,11 +1,15 @@
 import { Link } from "react-router-dom";
 import ProcessFlow from "../components/ProcessFlow";
+import SignUp from "./SignUp";
 
 export default function Home() {
   return (
     <div className="home">
       {/* HERO */}
       <section className="hero">
+        <img src="/hero.png" alt="" className="hero-image" />
+        <div className="hero-overlay"></div>
+        <div className="hero-gradient"></div>
         <div className="hero-content">
           <h1><span className="brand">MedSensei</span></h1>
           <br />
@@ -22,22 +26,24 @@ export default function Home() {
       </section>
 
       {/* MISSION */}
-      <section className="mission">
-        <h2>Leveling the Playing Field</h2>
-        <p>
-          The medical school application process is undoubtedly challenging.
-          Many pre-meds are pushed toward expensive consulting services that
-          can cost <strong>tens of thousands of dollars</strong>.
-        </p>
-        <p>
-          MedSensei was built to change that. We provide
-          personalized application support so that <strong>every single applicant </strong>
-          has a fair chance, regardless of socioeconomic status.
-        </p>
-        <p className="emphasis">
-          <span className="free-text">Everything is FREE</span>
-        </p>
-      </section>
+      <div className="mission-container">
+        <section className="mission">
+          <h2>Leveling the Playing Field</h2>
+          <p>
+            The medical school application process is undoubtedly challenging.
+            Many pre-meds are pushed toward expensive consulting services that
+            can cost <strong>tens of thousands of dollars</strong>.
+          </p>
+          <p>
+            MedSensei was built to change that. We provide
+            personalized application support so that <strong>every single applicant </strong>
+            has a fair chance, regardless of socioeconomic status.
+          </p>
+          <p className="emphasis">
+            <span className="free-text">Everything is FREE</span>
+          </p>
+        </section>
+      </div>
 
       {/* SERVICES */}
       {/* <section className="cards-container">
@@ -73,6 +79,8 @@ export default function Home() {
 
       {/* PROCESS FLOW */}
       <ProcessFlow />
+
+      <SignUp />
 
       {/* TESTIMONIALS */}
       <section className="testimonials">
@@ -113,7 +121,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
 
       {/* DONATION */}
       {/* <section className="donation">

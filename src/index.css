@@ -565,16 +565,38 @@ footer {
   flex-direction: column;
 }
 
+.signup-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-text-heading);
+}
+
 .signup-card p {
-  flex-grow: 1;
+  margin-bottom: 1.2rem;
+  color: var(--color-text-secondary);
+  font-size: 1.05rem;
+}
+
+.signup-card .checklist {
+  list-style: none;
+  padding-left: 0;
   margin-bottom: 1.8rem;
+  flex-grow: 1;
+}
+
+.signup-card .checklist li {
+  padding: 0.4rem 0;
+  color: var(--color-text-primary);
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 .signup-button {
-  align-self: flex-start;
-  padding: 0.7rem 1.6rem;
+  align-self: stretch;
+  padding: 1rem 2rem;
   border-radius: 0.6rem;
-  font-size: 0.95rem;
+  font-size: 1.1rem;
+  text-align: center;
 }
 
 .signup-button.secondary {

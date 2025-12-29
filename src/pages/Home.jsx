@@ -68,8 +68,8 @@ export default function Home() {
             <li>Flexible time commitment</li>
             <li>Optional MCAT advising</li>
           </ul>
-        </div> */}
-      </section>
+        </div>
+      </section> */}
 
       {/* PROCESS FLOW */}
       <ProcessFlow />

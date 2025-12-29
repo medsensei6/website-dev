@@ -15,7 +15,7 @@ export default function Home() {
             <br/>
             Navigate medical school applications with expert, human support.
             <br/>
-            <span className="free-text">Everything is free.</span>
+            <span className="free-text">Everything is FREE</span>
           </p>
           {/* <Link to="/signup" className="cta-button">Sign Up</Link> */}
         </div>
@@ -35,7 +35,7 @@ export default function Home() {
           has a fair chance, regardless of socioeconomic status.
         </p>
         <p className="emphasis">
-          <span className="free-text">Everything is free.</span>
+          <span className="free-text">Everything is FREE</span>
         </p>
       </section>
 
@@ -116,7 +116,7 @@ export default function Home() {
 
 
       {/* DONATION */}
-      <section className="donation">
+      {/* <section className="donation">
         <h2>Pay It Forward</h2>
         <p>
           If you found MedSensei helpful and would like to donate, you’re welcome
@@ -132,7 +132,7 @@ export default function Home() {
         >
           Donate Now
         </a>
-      </section>
+      </section> */}
     </div>
   );
 }

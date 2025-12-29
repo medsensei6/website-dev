@@ -254,12 +254,12 @@ export default function ProcessFlow() {
   return (
     <section className="process-flow">
       <h2>Our Process</h2>
+      <br/><br/><br/><br/>
 
       {/* MCAT Strategy */}
       <div className="flow-section">
-        <h3>MCAT Strategy</h3>
-        <br/><br/><br/><br/>
         <div className="flow-circle">
+          <div className="circle-center-label">MCAT Strategy</div>
           {mcatSteps.map((step, index) => (
             <FlowBubble
               key={index}
@@ -279,9 +279,8 @@ export default function ProcessFlow() {
 
       {/* Application Process */}
       <div className="flow-section">
-        <h3>Application Process</h3>
-        <br/><br/><br/><br/>
         <div className="flow-circle">
+          <div className="circle-center-label">Application Process</div>
           {appSteps.map((step, index) => (
             <FlowBubble
               key={index}

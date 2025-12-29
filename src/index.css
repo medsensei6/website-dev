@@ -146,8 +146,11 @@ a {
 .free-text {
   font-size: 2rem;
   font-weight: 800;
-  color: var(--color-primary-blue);
+  color: white;
+  background-color: var(--color-primary-blue);
   display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
 }
 
 /* =====================
@@ -498,10 +501,24 @@ a {
 /* =====================
    FAQ
 ===================== */
+.faq-header {
+  text-align: center;
+  padding: 4rem 2rem 0rem 2rem;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.faq-header h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: var(--color-text-heading);
+}
+
 .faq-container {
   max-width: 50rem;
   margin: 0 auto;
-  padding: 4rem 2rem;
+  padding: 2rem 2rem 4rem;
 }
 
 .faq-container details {
@@ -742,6 +759,24 @@ footer {
   margin: 0 auto;
   aspect-ratio: 1;
   min-height: 45rem;
+}
+
+.circle-center-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  background-color: var(--color-primary-blue);
+  border: 3px solid var(--color-primary-blue);
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  pointer-events: none;
+  z-index: 0;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
 }
 
 .bubble-overlay {

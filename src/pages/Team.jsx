@@ -9,14 +9,6 @@ export default function Team() {
       linkedin: "https://www.linkedin.com/in/vikram-srinath-48984b204/"
     },
     {
-      name: "Diana Tam",
-      role: "Recruiter",
-      img: "/team/diana.png",
-      // blurb: "MPH, Boston University. Clinical Research Coordinator. Lorem ipsum dolor.",
-      blurb: "Recruiter at MedSensei. Clinical Research Coordinator, Certified Yoga Instructor. MPH, Boston University.",
-      linkedin: "https://www.linkedin.com/in/diana-tam-mph-7140051a5/"
-    },
-    {
       name: "Rithik Rajasekar",
       role: "Head MCAT Strategist, Sensei",
       img: "/team/rithik.png",
@@ -25,11 +17,19 @@ export default function Team() {
     },
     {
       name: "Emily Guo",
-      role: "Sensei",
+      role: "DO Expert, Sensei",
       img: "/team/emily.png",
-      blurb: "3.88 SMP Boston University, accepted into all 4 DO schools applied to (Rowan, NYIT, MSU, Touro)",
+      blurb: "3.88 SMP Boston University, 4/4 DO acceptances (Rowan, NYIT, MSU, Touro).",
       linkedin: "https://www.linkedin.com/in/emily-guo-1329a9379/"
     },
+    {
+      name: "Diana Tam",
+      role: "Recruiter",
+      img: "/team/diana.png",
+      // blurb: "MPH, Boston University. Clinical Research Coordinator. Lorem ipsum dolor.",
+      blurb: "Clinical Research Coordinator, Certified Yoga Instructor. MPH, Boston University.",
+      linkedin: "https://www.linkedin.com/in/diana-tam-mph-7140051a5/"
+    }
   ];
 
   return (

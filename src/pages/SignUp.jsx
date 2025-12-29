@@ -10,7 +10,7 @@ export default function SignUp() {
           Choose the option that best fits where you are in your medical journey.
         </p>
         <p>
-          <span className="free-text">Everything is free.</span>
+          <span className="free-text">Everything is FREE</span>
         </p>
       </div>
 

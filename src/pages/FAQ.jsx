@@ -4,7 +4,7 @@ export default function FAQ() {
     {
       question: "What makes MedSensei different from other medical school consulting services?",
       answer:
-        "We offer consistent, personalized support with weekly 1:1 check-ins, rapid responses, and more. Additionally, everything is free."
+        "We offer consistent, personalized support with weekly 1:1 check-ins, rapid responses, and more. Additionally, everything is FREE!"
     },
     {
       question: "Who will I be working with during the process?",
@@ -25,16 +25,18 @@ export default function FAQ() {
   ];
 
   return (
-    <section className="faq-container p-8 max-w-4xl mx-auto">
-      <h2 className="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
-      <div className="space-y-4">
+    <div>
+      <div className="faq-header">
+        <h1>Frequently Asked Questions</h1>
+      </div>
+      <section className="faq-container">
         {faqs.map(({ question, answer }, index) => (
-          <details key={index} className="p-4 border rounded-lg hover:shadow-md transition-shadow">
-            <summary className="cursor-pointer font-semibold text-lg">{question}</summary>
-            <p className="mt-2 text-gray-700">{answer}</p>
+          <details key={index}>
+            <summary>{question}</summary>
+            <p>{answer}</p>
           </details>
         ))}
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }

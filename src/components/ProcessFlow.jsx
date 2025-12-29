@@ -254,47 +254,49 @@ export default function ProcessFlow() {
   return (
     <section className="process-flow">
       <h2>Our Process</h2>
-      <br/><br/><br/><br/>
+      <p>We personalize guidance to each individual, building pathways for success.</p>
 
-      {/* MCAT Strategy */}
-      <div className="flow-section">
-        <div className="flow-circle">
-          <div className="circle-center-label">MCAT Strategy</div>
-          {mcatSteps.map((step, index) => (
-            <FlowBubble
-              key={index}
-              step={step}
-              isExpanded={expandedMCAT === index}
-              onToggle={() => setExpandedMCAT(expandedMCAT === index ? null : index)}
-              position={getCircularPosition(index, mcatSteps.length)}
-            />
-          ))}
-          {mcatSteps.map((_, index) =>
-            index < mcatSteps.length - 1 ? (
-              <CurvedArrow key={`arrow-${index}`} index={index} total={mcatSteps.length} />
-            ) : null
-          )}
+      <div className="flow-sections-container">
+        {/* MCAT Strategy */}
+        <div className="flow-section">
+          <div className="flow-circle">
+            <div className="circle-center-label">MCAT Strategy</div>
+            {mcatSteps.map((step, index) => (
+              <FlowBubble
+                key={index}
+                step={step}
+                isExpanded={expandedMCAT === index}
+                onToggle={() => setExpandedMCAT(expandedMCAT === index ? null : index)}
+                position={getCircularPosition(index, mcatSteps.length)}
+              />
+            ))}
+            {mcatSteps.map((_, index) =>
+              index < mcatSteps.length - 1 ? (
+                <CurvedArrow key={`arrow-${index}`} index={index} total={mcatSteps.length} />
+              ) : null
+            )}
+          </div>
         </div>
-      </div>
 
-      {/* Application Process */}
-      <div className="flow-section">
-        <div className="flow-circle">
-          <div className="circle-center-label">Application Process</div>
-          {appSteps.map((step, index) => (
-            <FlowBubble
-              key={index}
-              step={step}
-              isExpanded={expandedApp === index}
-              onToggle={() => setExpandedApp(expandedApp === index ? null : index)}
-              position={getCircularPosition(index, appSteps.length)}
-            />
-          ))}
-          {appSteps.map((_, index) =>
-            index < appSteps.length - 1 ? (
-              <CurvedArrow key={`arrow-${index}`} index={index} total={appSteps.length} />
-            ) : null
-          )}
+        {/* Application Process */}
+        <div className="flow-section">
+          <div className="flow-circle">
+            <div className="circle-center-label">Application Process</div>
+            {appSteps.map((step, index) => (
+              <FlowBubble
+                key={index}
+                step={step}
+                isExpanded={expandedApp === index}
+                onToggle={() => setExpandedApp(expandedApp === index ? null : index)}
+                position={getCircularPosition(index, appSteps.length)}
+              />
+            ))}
+            {appSteps.map((_, index) =>
+              index < appSteps.length - 1 ? (
+                <CurvedArrow key={`arrow-${index}`} index={index} total={appSteps.length} />
+              ) : null
+            )}
+          </div>
         </div>
       </div>
     </section>

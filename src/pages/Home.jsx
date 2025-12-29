@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import ProcessFlow from "../components/ProcessFlow";
 
 export default function Home() {
   return (
@@ -69,6 +70,9 @@ export default function Home() {
           </ul>
         </div>
       </section>
+
+      {/* PROCESS FLOW */}
+      <ProcessFlow />
 
       {/* TESTIMONIALS */}
       <section className="testimonials">

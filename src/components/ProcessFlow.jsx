@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaHandshake, FaPhone, FaChartLine, FaPencilAlt, FaEye, FaFileAlt, FaComments, FaGraduationCap, FaRocket } from "react-icons/fa";
 
@@ -247,10 +247,104 @@ function getCircularPosition(index, total, radius = 45) {
 }
 
 
+function VerticalFlowStep({ step, isExpanded, onToggle }) {
+  const Icon = step.icon;
+
+  return (
+    <div className="vertical-flow-step">
+      <div
+        className={`vertical-bubble ${isExpanded ? 'expanded' : ''}`}
+        onClick={onToggle}
+      >
+        <div className="bubble-title">
+          {Icon && (
+            <div className="bubble-icon">
+              <Icon />
+            </div>
+          )}
+          <span>{step.title}</span>
+        </div>
+        {isExpanded && (
+          <div className="bubble-content">
+            <p>{step.content}</p>
+            {step.link && (
+              <Link
+                to={step.link}
+                className="bubble-link"
+                onClick={(e) => e.stopPropagation()}
+              >
+                Sign up →
+              </Link>
+            )}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
 export default function ProcessFlow() {
   const [expandedMCAT, setExpandedMCAT] = useState(null);
   const [expandedApp, setExpandedApp] = useState(null);
+  const [isMobile, setIsMobile] = useState(
+    typeof window !== 'undefined' ? window.innerWidth <= 768 : false
+  );
 
+  // Check if mobile on mount and on resize
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  // If mobile, render vertical layout
+  if (isMobile) {
+    return (
+      <section className="process-flow">
+        <h2>Our Process</h2>
+        <p>We personalize guidance to each individual, building pathways for success.</p>
+
+        <div className="flow-sections-vertical">
+          {/* MCAT Strategy */}
+          <div className="flow-section-vertical">
+            <h3>MCAT Strategy</h3>
+            <div className="vertical-flow-list">
+              {mcatSteps.map((step, index) => (
+                <VerticalFlowStep
+                  key={index}
+                  step={step}
+                  isExpanded={expandedMCAT === index}
+                  onToggle={() => setExpandedMCAT(expandedMCAT === index ? null : index)}
+                />
+              ))}
+            </div>
+          </div>
+
+          {/* Application Process */}
+          <div className="flow-section-vertical">
+            <h3>Application Process</h3>
+            <div className="vertical-flow-list">
+              {appSteps.map((step, index) => (
+                <VerticalFlowStep
+                  key={index}
+                  step={step}
+                  isExpanded={expandedApp === index}
+                  onToggle={() => setExpandedApp(expandedApp === index ? null : index)}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  // Desktop: render circular layout
   return (
     <section className="process-flow">
       <h2>Our Process</h2>

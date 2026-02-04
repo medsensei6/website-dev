@@ -40,7 +40,7 @@ export default function Home() {
             has a fair chance, regardless of socioeconomic status.
           </p>
           <p className="emphasis">
-            <span className="free-text">Everything is FREE</span>
+            <span className="free-text">Everything is free.</span>
           </p>
         </section>
       </div>
@@ -110,13 +110,30 @@ export default function Home() {
               className="testimonial-avatar"
             />
             <p>
-              “MedSensei helped me prepare for my first traditional interview,
-              tailoring my responses to each school’s mission. Their question
+              "MedSensei helped me prepare for my first traditional interview,
+              tailoring my responses to each school's mission. Their question
               bank and continued encouragement helped me confidently ace my
-              interviews.”
+              interviews."
             </p>
             <span className="author">
               -  Sarah, <strong>M1 at Sidney Kimmel Medical College</strong>
+            </span>
+          </div>
+          <div className="testimonial-card">
+            <img
+              src="/team/ethan.png"
+              alt="Ethan"
+              className="testimonial-avatar"
+            />
+            <p>
+              "MedSensei's detailed, timely feedback on my secondary essays
+              played a big role in earning interviews at my top-choice medical
+              schools. MedSensei did more than provide another set of eyes on my
+              essays. I received critical feedback that helped convey the full
+              power of my stories to admissions committees."
+            </p>
+            <span className="author">
+              -  Ethan, <strong>successful med school applicant</strong>
             </span>
           </div>
         </div>

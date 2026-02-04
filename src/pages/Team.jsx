@@ -23,13 +23,27 @@ export default function Team() {
       linkedin: "https://www.linkedin.com/in/emily-guo-1329a9379/"
     },
     {
+      name: "Edward Stradling",
+      role: "Reinvention Strategist, Sensei",
+      img: "/team/edward.png",
+      blurb: "2.76 uGPA → 4.00 Post-Bacc GPA → 8 Interviews, accepted USMD. Career changer, finance to medicine.",
+      linkedin: "https://www.linkedin.com/in/edward-stradling/"
+    },
+    {
+      name: "Sahana Lothumalla",
+      role: "Sensei",
+      img: "/team/sahana.png",
+      blurb: "UMich Grad, Healthcare Consulting, 2026 Medical School Matriculant. Well-suited for students applying TMDSAS.",
+      linkedin: "https://www.linkedin.com/in/sahana-lothumalla/"
+    },
+    {
       name: "Diana Tam",
       role: "Recruiter",
       img: "/team/diana.png",
       // blurb: "MPH, Boston University. Clinical Research Coordinator. Lorem ipsum dolor.",
       blurb: "Clinical Research Coordinator, Certified Yoga Instructor. MPH, Boston University.",
       linkedin: "https://www.linkedin.com/in/diana-tam-mph-7140051a5/"
-    }
+    },
   ];
 
   return (

@@ -365,7 +365,7 @@ a {
 }
 
 .testimonial-grid {
-  max-width: 62.5rem;
+  max-width: 95rem;
   margin: 0 auto;
   display: grid;
   gap: 2rem;

@@ -247,7 +247,7 @@ function getCircularPosition(index, total, radius = 45) {
 }
 
 
-function VerticalFlowStep({ step, isExpanded, onToggle }) {
+function VerticalFlowStep({ step, isExpanded, onToggle, showArrow }) {
   const Icon = step.icon;
 
   return (
@@ -279,6 +279,26 @@ function VerticalFlowStep({ step, isExpanded, onToggle }) {
           </div>
         )}
       </div>
+      {showArrow && (
+        <div className="vertical-arrow">
+          <svg width="24" height="20" viewBox="0 0 24 20">
+            <line
+              x1="12"
+              y1="0"
+              x2="12"
+              y2="14"
+              stroke="var(--color-primary-blue)"
+              strokeWidth="3"
+              opacity="0.6"
+            />
+            <polygon
+              points="12,20 6,12 18,12"
+              fill="var(--color-primary-blue)"
+              opacity="0.7"
+            />
+          </svg>
+        </div>
+      )}
     </div>
   );
 }
@@ -320,6 +340,7 @@ export default function ProcessFlow() {
                   step={step}
                   isExpanded={expandedMCAT === index}
                   onToggle={() => setExpandedMCAT(expandedMCAT === index ? null : index)}
+                  showArrow={index < mcatSteps.length - 1}
                 />
               ))}
             </div>
@@ -335,6 +356,7 @@ export default function ProcessFlow() {
                   step={step}
                   isExpanded={expandedApp === index}
                   onToggle={() => setExpandedApp(expandedApp === index ? null : index)}
+                  showArrow={index < appSteps.length - 1}
                 />
               ))}
             </div>

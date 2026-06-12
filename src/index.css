@@ -255,8 +255,11 @@ a {
    MISSION / TEXT SECTIONS
 ===================== */
 .mission-container {
-  background-color: white;
-  /* background-color: var(--color-bg-section); */
+  background: linear-gradient(to bottom, var(--color-bg-footer) 0%, var(--color-bg-footer) 90%, var(--color-bg-card) 100%);
+}
+
+.sensei-cycle-container {
+  background: linear-gradient(to bottom, var(--color-bg-card) 0%, var(--color-bg-card) 90%, var(--color-border-light) 100%);
 }
 
 .mission {
@@ -283,6 +286,10 @@ a {
   font-weight: 800;
   color: var(--color-text-heading);
   margin-top: 1.5rem;
+}
+
+.sensei-cycle-container .mission {
+  max-width: 70rem;
 }
 
 .mission + .cards-container {
@@ -354,8 +361,8 @@ a {
    TESTIMONIALS
 ===================== */
 .testimonials {
-  background-color: var(--color-bg-section);
-  padding: 5.5rem 2rem;
+  background: linear-gradient(to bottom, var(--color-bg-section) 0%, var(--color-bg-footer) 10%, var(--color-bg-footer) 100%);
+  padding: 2.5rem 2rem 5.5rem;
 }
 
 .testimonials h2 {
@@ -604,11 +611,12 @@ footer {
 ===================== */
 .signup-page {
   padding-bottom: 5rem;
+  background: linear-gradient(to bottom, var(--color-bg-page) 0%, var(--color-bg-page) 90%, var(--color-bg-section) 100%);
 }
 
 .signup-header {
   text-align: center;
-  padding: 4.5rem 2rem 0rem 2rem;
+  padding: 2rem 2rem 0rem 2rem;
   max-width: 50rem;
   margin: 0 auto;
 }
@@ -773,8 +781,8 @@ footer {
 .process-flow {
   max-width: 100%;
   margin: 0 auto;
-  padding: 5rem 2rem;
-  background-color: var(--color-bg-section);
+  padding: 2.5rem 2rem 5rem;
+  background: linear-gradient(to bottom, var(--color-border-light) 0%, var(--color-border-light) 90%, var(--color-bg-page) 100%);
 }
 
 .process-flow h2 {

@@ -45,6 +45,25 @@ export default function Home() {
         </section>
       </div>
 
+      {/* SENSEI CYCLE */}
+      <div className="mission-container sensei-cycle-container">
+        <section className="mission">
+          <h2>The Sensei Cycle</h2>
+          <p>
+            MedSensei is built to grow through mentorship.
+          </p>
+          <p>
+            Each year, we help applicants get into medical school. Once they
+            succeed, they have the chance to come back as Senseis and guide
+            the next class of students through the same process.
+          </p>
+          <p className="emphasis">
+            Applicants get in. Students become Senseis. Senseis help the next generation.
+          </p>
+          <br/>
+        </section>
+      </div>
+
       {/* SERVICES */}
       {/* <section className="cards-container">
         <div className="card">

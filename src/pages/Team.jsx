@@ -13,7 +13,7 @@ export default function Team() {
       role: "Lead Sensei",
       img: "/team/carter.png",
       blurb: "521 MCAT, 3 TMDSAS Interviews, Former VP of Pre-Med Mentoring Club, University of Virginia.",
-      linkedin: null
+      linkedin: "https://www.linkedin.com/in/carter-taylor-833616301/"
     },
     {
       name: "Rithik Rajasekar",

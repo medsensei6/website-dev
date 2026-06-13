@@ -49,6 +49,7 @@ export default function Team() {
     <div>
     <div className="team-header">
       <h1>Meet the Team</h1>
+      <p>The Senseis dedicated to helping you get into medical school.</p>
     </div>
     <section className="team-container">
       {teamMembers.map(member => {

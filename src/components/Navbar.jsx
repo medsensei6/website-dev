@@ -21,10 +21,10 @@ export default function Navbar() {
       </button>
 
       <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
-        <Link to="/signup" onClick={() => setIsMenuOpen(false)}>Sign Up</Link>
         <Link to="/team" onClick={() => setIsMenuOpen(false)}>Team</Link>
         <Link to="/resources" onClick={() => setIsMenuOpen(false)}>Resources</Link>
         <Link to="/faq" onClick={() => setIsMenuOpen(false)}>FAQ</Link>
+        <Link to="/signup" className="nav-cta" onClick={() => setIsMenuOpen(false)}>Sign Up</Link>
       </div>
     </nav>
   );
